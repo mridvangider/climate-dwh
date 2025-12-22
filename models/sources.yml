@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ghcn
+    database: climate_src
+    schema: ghcn
+    tables:
+      - name: daily
+      - name: stations
+      - name: countries
+      - name: states
+      - name: inventory
