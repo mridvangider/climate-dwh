@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: monthly_avg
+    description: "Monthly average temperatures for weather stations, including max, min, and overall averages."
+    columns:
+      - name: station_name
+        description: "The name of the weather station."
+        data_tests:
+          - not_null
+      - name: month
+        description: "The month (truncated date) for which the temperature averages are calculated."
+        data_tests:
+          - not_null
+      - name: avg_tmax_celsius
+        description: "The average maximum temperature in Celsius for the month."
+        data_tests:
+          - not_null
+      - name: avg_tmin_celsius
+        description: "The average minimum temperature in Celsius for the month."
+        data_tests:
+          - not_null
+      - name: avg_temp_celsius
+        description: "The average temperature in Celsius, calculated as the mean of max and min temperatures."
+        data_tests:
+          - not_null
