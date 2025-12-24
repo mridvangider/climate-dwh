@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 ARG PYTHON_VERSION=3.12.12-slim-bookworm
 FROM python:${PYTHON_VERSION}
 
